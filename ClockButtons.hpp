@@ -26,6 +26,9 @@ enum clock_button_t {
 class ClockButtons {
   public:
 
+    /**
+     * Register the callback function for button presses.
+     */
     void register_callback(KeyCallbackFn callback);
 
   private:

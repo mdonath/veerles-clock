@@ -2,25 +2,15 @@
 #define __CLOCK_HPP__
 
 #include "ClockAlarm.hpp"
-#include "ClockTime.hpp"
-#include "ClockSound.hpp"
-#include "ClockDisplay.hpp"
 #include "ClockButtons.hpp"
+#include "ClockDisplay.hpp"
 #include "ClockNetwork.hpp"
-
-//class ClockTime;
-//class ClockSound;
-//class ClockDisplay;
-//class ClockAlarm;
-//class ClockButtons;
-//class ClockNetwork;
-
-//class KeyCallbackFn;
-
+#include "ClockSound.hpp"
+#include "ClockTime.hpp"
 
 class Clock {
   public:
-    void begin(int tx, int rx, KeyCallbackFn callback, const char* ssid, const char* password, const char* ntp_server);
+    void begin(int tx, int rx, KeyCallbackFn callback, const char *ssid, const char *password, const char *ntp_server);
 
     void tick();
 

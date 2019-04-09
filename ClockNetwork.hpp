@@ -3,10 +3,9 @@
 
 class ClockNetwork {
   public:
-    void start_wifi(const char* ssid, const char* password);
-    
+    void start_wifi(const char *ssid, const char *password);
+
   private:
-  
 };
 
 #endif
