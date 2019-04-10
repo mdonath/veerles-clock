@@ -10,20 +10,20 @@ class ClockTime;
 
 // Clock Modes
 enum display_mode_t {
-  show_time,
-  show_alarm_hour,
-  show_alarm_minute,
-  show_alarm_countdown,
-  show_volume,
-  show_brightness,
-  number_of_modes
+    show_time,
+    show_alarm_hour,
+    show_alarm_minute,
+    show_alarm_countdown,
+    show_volume,
+    show_brightness,
+    number_of_modes
 };
 
 class ClockDisplay {
   public:
-    ClockDisplay() { };
+    ClockDisplay(){};
 
-    void begin(Clock* my_clock, uint8_t address);
+    void begin(Clock *my_clock, uint8_t address);
     void register_alarm(ClockAlarm *alarm);
     void register_time(ClockTime *clock_time);
 

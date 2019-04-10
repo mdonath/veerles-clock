@@ -88,17 +88,17 @@ void Clock::event_next_mode(bool heldDown) {
 
 void Clock::event_debug(bool heldDown) {
     Serial.print("Time: ");
-    Serial.print(this->clock_time.get_hour());
+    Serial.printf("%02d", this->clock_time.get_hour());
     Serial.print(":");
-    Serial.print(this->clock_time.get_minute());
+    Serial.printf("%02d", this->clock_time.get_minute());
     Serial.print(":");
-    Serial.println(this->clock_time.get_second());
+    Serial.printf("%02d\n", this->clock_time.get_second());
     Serial.print("Alert: ");
-    Serial.print(this->clock_alarm.get_hour());
+    Serial.printf("%02d", this->clock_alarm.get_hour());
     Serial.print(":");
-    Serial.print(this->clock_alarm.get_minute());
+    Serial.printf("%02d", this->clock_alarm.get_minute());
     Serial.print(":");
-    Serial.println(this->clock_alarm.get_second());
+    Serial.printf("%02d\n", this->clock_alarm.get_second());
 }
 
 void Clock::event_blink(bool heldDown) {
